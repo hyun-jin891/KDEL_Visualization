@@ -622,15 +622,3 @@ im = ax.matshow(matrix, cmap = cmap, norm = norm)
 anim = animation.FuncAnimation(fig, update)
 
 plt.show()
-               
-            
-    
-                
-        
-
-
-
-
-
-
-# %%
