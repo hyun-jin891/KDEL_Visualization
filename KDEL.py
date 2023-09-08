@@ -4,7 +4,6 @@ import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import matplotlib.colors as colors
-import sys
 
 
 ER_MEMBRANE = 19
@@ -219,7 +218,7 @@ class Cell_World:
                 if flag == False:
                     current_Chaperone.setterXY(current_x + 1, current_y)
 
-                #self.__map[current_y][current_x] = 0
+
                 if current_Chaperone.getterX() == GOLGI_MEMBRANE:
                     while True:
                         current_Chaperone.move()
@@ -246,7 +245,7 @@ class Cell_World:
                 if flag == False:
                     current_Chaperone.setterXY(current_x - 1, current_y)
 
-                #self.__map[current_y][current_x] = 0
+
                 if current_Chaperone.getterX() == ER_MEMBRANE:
                     while True:
                         current_Chaperone.move()
@@ -308,7 +307,7 @@ class Cell_World:
                 if flag == False:
                     current_unfolded_protein.setterXY(current_x + 1, current_y)
 
-                #self.__map[current_y][current_x] = 0
+
                 if current_unfolded_protein.getterX() == GOLGI_MEMBRANE:
                     while True:
                         current_unfolded_protein.move()
@@ -335,7 +334,7 @@ class Cell_World:
                 if flag == False:
                     current_unfolded_protein.setterXY(current_x - 1, current_y)
 
-                #self.__map[current_y][current_x] = 0
+
                 if current_unfolded_protein.getterX() == ER_MEMBRANE:
                     while True:
                         current_unfolded_protein.move()
@@ -378,7 +377,7 @@ class Cell_World:
                 if flag == False:
                     current_other_protein.setterXY(current_x + 1, current_y)
 
-                #self.__map[current_y][current_x] = 0
+
                 if current_other_protein.getterX() == GOLGI_MEMBRANE:
                     while True:
                         current_other_protein.move()
@@ -404,7 +403,7 @@ class Cell_World:
                         continue
                 if flag == False:
                     current_other_protein.setterXY(current_x - 1, current_y)
-                #self.__map[current_y][current_x] = 0
+
                 if current_other_protein.getterX() == ER_MEMBRANE:
                     while True:
                         current_other_protein.move()
@@ -447,7 +446,7 @@ class Cell_World:
                 if flag == False:
                     current_kdel_receptor.setterXY(current_x + 1, current_y)
  
-                #self.__map[current_y][current_x] = 0
+
                 if current_kdel_receptor.getterX() == GOLGI_MEMBRANE:
                     self.__map[current_y][current_x] = 0
                     self.__map[current_y][current_kdel_receptor.getterX()] = 4
@@ -468,7 +467,7 @@ class Cell_World:
                         continue
                 if flag == False:
                     current_kdel_receptor.setterXY(current_x - 1, current_y)
-                #self.__map[current_y][current_x] = 0
+
                 if current_kdel_receptor.getterX() == ER_MEMBRANE:
                     self.__map[current_y][current_x] = 0
                     self.__map[current_y][current_kdel_receptor.getterX()] = 4
@@ -520,7 +519,7 @@ class Cell_World:
                 if flag == False:
                     current_other_receptor.setterXY(current_x + 1, current_y)
 
-                #self.__map[current_y][current_x] = 0
+
                 if current_other_receptor.getterX() == GOLGI_MEMBRANE:
                     self.__map[current_y][current_x] = 0
                     self.__map[current_y][current_other_receptor.getterX()] = 5
@@ -542,7 +541,7 @@ class Cell_World:
                 if flag == False:
                     current_other_receptor.setterXY(current_x - 1, current_y)
 
-                #self.__map[current_y][current_x] = 0
+
                 if current_other_receptor.getterX() == ER_MEMBRANE:
                     self.__map[current_y][current_x] = 0
                     self.__map[current_y][current_other_receptor.getterX()] = 5
