@@ -14,3 +14,6 @@
 * 내용
   * ER Chaperone - KDEL Receptor 사이의 관계를 시각화한다.
   * 시각화된 모델을 통해 KDEL이라는 amino acid sequence의 존재 의미를 파악할 수 있다.
+
+* 자세한 내용
+  https://hyun-jin891.github.io/project/2023/09/09/KDEL-Visualization/
