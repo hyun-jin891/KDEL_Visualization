@@ -95,7 +95,6 @@ class Cell_World:
         self.other_receptor = []
         
         for i in range(n1):
-            weight = [0.8, 0.2]
             while True:
                 random_x = randint(1, ER_MEMBRANE - 1)
                 random_y = randint(2, 97)
